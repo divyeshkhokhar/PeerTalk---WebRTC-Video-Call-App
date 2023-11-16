@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PeerTalk</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="header">
+        <h1>PeerTalk</h1>
+      </div>
+      <div class="controls">
+        <input
+          placeholder="Enter username..."
+          type="text"
+          id="username-input"
+        />
+        <button onclick="sendUsername()" id="send-call-btn">
+          Initiate Call
+        </button>
+        <button onclick="startCall()" id="start-call-btn">Start Call</button>
+        <button onclick="joinCall()" id="join-call-btn">Join Call</button>
+      </div>
+      <div id="video-call-div">
+        <video muted id="local-video" autoplay></video>
+        <video id="remote-video" autoplay></video>
+        <div class="call-action-div">
+          <button
+            onclick="toggleMedia('pause-video-btn', true)"
+            id="pause-video-btn"
+          >
+            Pause Video
+          </button>
+          <button
+            onclick="toggleMedia('mute-audio-btn', false)"
+            id="mute-audio-btn"
+          >
+            Mute Audio
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="videoapp.js"></script>
+  </body>
+</html>
