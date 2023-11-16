@@ -20,7 +20,7 @@ PeerTalk is a WebRTC-based video call application that allows users to initiate 
 4. Install the required dependencies:
 
     ```bash
-    npm install
+    npm install websocket
     ```
 
 ## Usage
