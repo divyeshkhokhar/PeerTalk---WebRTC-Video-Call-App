@@ -1,7 +1,5 @@
 # PeerTalk---WebRTC-Video-Call-App
 
-# PeerTalk WebRTC Video Call App
-
 PeerTalk is a WebRTC-based video call application that allows users to initiate and join video calls through a simple interface.
 
 ## Installation
@@ -39,10 +37,12 @@ PeerTalk is a WebRTC-based video call application that allows users to initiate 
 
 1. Open `videoapp.html` in a web browser.
 2. Enter your desired username in the provided input field.
-3. Click on the "Initiate Call" button to create a offer to connect or create room.
-4. After Initiate the call, use the "Start Call" button to begin the video call.
+3. Click on the "Initiate Call" button to create an offer and establish a connection.
+   - **Note**: Upon initiation, the server-side console might display a message such as `Username: (xyz) created a call request`, providing confirmation that the call request was successfully processed by the Node.js server.
+4. Once initiated, use the "Start Call" button to begin the video call.
 5. Grant necessary permissions for camera and microphone access if prompted.
 6. You should now be connected and able to communicate via video with the other peer.
+
 
 ### Joining a Call
 
